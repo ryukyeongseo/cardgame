@@ -68,25 +68,13 @@
         .card-back {
             transform: rotateY(180deg);
         }
-
-        #btn {
-            width: 60px;
-            height: 30px;
-            position: absolute;
-            top: 60%;
-            background-color: rgb(190, 69, 69);
-            border-radius: 10%;
-            color: white;
-            cursor: pointer;
-
-        }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
     </div>
-    <button id="btn">reset</button>
+
     <script>
         const $wrapper = document.querySelector('#wrapper');
         const $btn = document.querySelector('#btn');
@@ -187,7 +175,6 @@
             completed = [];
             startGame();
         }
-        $btn.addEventListener('click', resetGame);
     </script>
 </body>
 
